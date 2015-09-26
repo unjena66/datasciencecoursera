@@ -1,15 +1,17 @@
-actLab
-	activity Label : activity the subjects performed
-	1 WALKING
-	2 WALKING_UPSTAIRS
-	3 WALKING_DOWNSTAIRS
-	4 SITTING
-	5 STANDING
-	6 LAYING
+* actLab
 
-subject
-	30 subjects 
-	the range is from 1 to 30
+	>activity Label : activity the subjects performed
+	>1 WALKING
+	>2 WALKING_UPSTAIRS
+	>3 WALKING_DOWNSTAIRS
+	>4 SITTING
+	>5 STANDING
+	>6 LAYING
+
+* subject
+
+	>30 subjects 
+	>the range is from 1 to 30
                
 for the rest of columns - 3rd to 81st columns, please find details below
 
