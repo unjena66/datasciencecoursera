@@ -1,4 +1,4 @@
-* actLab
++ actLab
 
 	>activity Label : activity the subjects performed
 	>1 WALKING
@@ -8,7 +8,7 @@
 	>5 STANDING
 	>6 LAYING
 
-* subject
++ subject
 
 	>30 subjects 
 	>the range is from 1 to 30
@@ -28,25 +28,43 @@ These signals were used to estimate variables of the feature vector for each pat
 ###The unit of the values estimated by an accelerometer, which is labeled '--Acc--', is standard gravity unit 'g'. And the unit of the values estimated by an gyroscope, which is labeled '--Gyro--', is radians/second.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
+
 
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
+
 std(): Standard deviation
 
