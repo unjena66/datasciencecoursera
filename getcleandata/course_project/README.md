@@ -92,17 +92,9 @@ name the subject column
 
     colnames(totalAct)[81] = 'subject'
 
-melt the extracted data 
-
-    totalMelt <- melt(totalAct, id=c('actLab','subject'))
-
-group by two id - activity label/ subject
-
-    subject <- group_by(totalMelt, actLab, subject)
-
 average of each variable for each activity and each subject.
 
-    sum <- summarize(subject, Mean = mean(value))
-
-sum
+    sum <- summarise_each(group_by(totalAct, actLab, subject), funs(mean))
+    
+    sum
 

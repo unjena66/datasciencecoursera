@@ -65,8 +65,8 @@ totalAct <-
 featMeanStd<-feat$V2[featMS]
 
 # names each column with descriptive variable names
-colnames(total) = featMeanStd
-colnames(total)[80] = "actLab"
+colnames(totalAct) = featMeanStd
+colnames(totalAct)[80] = "actLab"
 
 ## *********Step 5****************
 ## 5. From the data set in step 4, creates a second, independent tidy data set 
@@ -83,13 +83,7 @@ totalAct <- cbind(totalAct, totalSubj)
 # name the subject column
 colnames(totalAct)[81] = 'subject'
 
-# melt the extracted data 
-totalMelt <- melt(totalAct, id=c('actLab','subject'))
-
-# group by two id - activity label/ subject
-subject <- group_by(totalMelt, actLab, subject)
-
 # average of each variable for each activity and each subject.
-sum <- summarize(subject, Mean = mean(value))
+sum <- summarise_each(group_by(totalAct, actLab, subject), funs(mean))
 
 sum
