@@ -1,4 +1,4 @@
-+ actLab
+##+ actLab
 
 	>activity Label : activity the subjects performed
 	>1 WALKING
